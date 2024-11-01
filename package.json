@@ -8,12 +8,13 @@
   "scripts": {
     "start": "pnpm --filter nextjs start",
     "build": "pnpm --filter nextjs build",
-    "dev": "pnpm --filter nextjs dev",
+    "dev": "concurrently -n \"nextjs,studio\" -c \"bgBlue.bold,bgMagenta.bold\" \"pnpm --filter nextjs dev\" \"pnpm --filter studio dev\"",
     "studio:dev": "pnpm --filter studio run dev",
     "studio:deploy": "pnpm --filter studio deploy",
     "lint": "pnpm --filter nextjs lint"
   },
   "devDependencies": {
+    "concurrently": "^9.0.1",
     "eslint": "latest",
     "eslint-config-next": "latest"
   }
