@@ -5,8 +5,8 @@
     "predev": "if [ \"$VERCEL\" != \"1\" ]; then npm run typegen; fi",
     "dev": "next dev",
     "prebuild": "if [ \"$VERCEL\" != \"1\" ]; then npm run typegen; fi",
-    "build": "next build --output public",
-    "postbuild": "ls -a && mv .next ../public",
+    "build": "next build",
+    "postbuild": "if [ \"$VERCEL\" = \"1\" ]; then mv nextjs/.next nextjs/public; fi",
     "start": "next start",
     "lint": "next lint",
     "typegen": "sanity typegen generate"
