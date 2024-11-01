@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "nextjs",
+  "framework": "nextjs",
   "scripts": {
     "predev": "if [ \"$VERCEL\" != \"1\" ]; then npm run typegen; fi",
     "dev": "next dev",
