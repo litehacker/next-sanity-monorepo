@@ -1,9 +1,15 @@
 {
   "framework": "nextjs",
-  "projects": {
-    "nextjs": {
-      "buildCommand": "pnpm --filter nextjs build",
-      "outputDirectory": "nextjs/.next"
+  "builds": [
+    {
+      "src": "nextjs/package.json",
+      "use": "@vercel/next"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "nextjs/$1"
+    }
+  ]
 }
