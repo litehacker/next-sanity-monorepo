@@ -1,4 +1,6 @@
 {
+  "buildCommand": "pnpm --filter nextjs build",
+  "outputDirectory": "nextjs/.next",
   "builds": [
     {
       "src": "nextjs/package.json",
