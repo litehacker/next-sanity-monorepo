@@ -1,7 +1,6 @@
 {
   "framework": "nextjs",
   "buildCommand": "pnpm --filter nextjs run build",
-  "outputDirectory": ".next",
   "installCommand": "pnpm i",
   "devCommand": "pnpm --filter nextjs dev",
   "builds": [
