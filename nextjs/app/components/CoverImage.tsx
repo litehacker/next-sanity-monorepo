@@ -1,7 +1,6 @@
-import { stegaClean } from "@sanity/client/stega";
 import { Image } from "next-sanity/image";
-
 import { urlForImage } from "@/sanity/lib/utils";
+import { stegaClean } from "next-sanity";
 
 interface CoverImageProps {
   image: any;
