@@ -3,7 +3,6 @@
   "name": "next-sanity-monorepo",
   "version": "1.0.1",
   "author": "Giorgi Gvimradze <natceo@gmail.com>",
-  "outputDirectory": "nextjs/.next",
   "license": "MIT",
   "packageManager": "pnpm@9.12.3",
   "scripts": {
