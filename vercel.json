@@ -2,6 +2,7 @@
   "framework": "nextjs",
   "buildCommand": "pnpm --filter nextjs run build",
   "installCommand": "pnpm i",
+  "outputDirectory": ".next",
   "devCommand": "pnpm --filter nextjs dev",
   "builds": [
     {
