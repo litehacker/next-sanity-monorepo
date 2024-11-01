@@ -1,0 +1,22 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "pnpm --filter nextjs run build",
+  "outputDirectory": "nextjs/.next",
+  "installCommand": "pnpm i",
+  "devCommand": "pnpm --filter nextjs dev",
+  "builds": [
+    {
+      "src": "nextjs/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "nextjs/$1"
+    }
+  ],
+  "env": {
+    "VERCEL": "1"
+  }
+}
