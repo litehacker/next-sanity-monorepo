@@ -1,4 +1,5 @@
 {
+  "framework": "nextjs",
   "buildCommand": "pnpm --filter nextjs run build",
   "installCommand": "pnpm i",
   "devCommand": "pnpm --filter nextjs dev",
