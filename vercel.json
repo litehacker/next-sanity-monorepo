@@ -1,0 +1,9 @@
+{
+  "framework": "nextjs",
+  "projects": {
+    "nextjs": {
+      "buildCommand": "pnpm --filter nextjs build",
+      "outputDirectory": "nextjs/.next"
+    }
+  }
+}
