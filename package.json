@@ -1,0 +1,9 @@
+{
+  "name": "next-sanity-monorepo",
+  "version": "1.0.1",
+  "author": "Giorgi Gvimradze <natceo@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "./*"
+  ]
+}
