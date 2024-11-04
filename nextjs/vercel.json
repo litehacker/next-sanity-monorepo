@@ -1,0 +1,10 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "pnpm run build",
+  "installCommand": "pnpm install",
+  "outputDirectory": ".next",
+  "devCommand": "pnpm dev",
+  "env": {
+    "VERCEL": "1"
+  }
+}
